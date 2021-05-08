@@ -5,8 +5,6 @@ This library parses and validates transactions with a predefined model currently
 The validator uses dependency injection as it requires a parser to support your data format.
 
 ```python
-from transactions import *
-
 # initialize the validator injecting the parser
 json_validator = TransactionValidator(parser=parse_json_transaction)
 # retrieve your data. could be a DB query or a user request.
